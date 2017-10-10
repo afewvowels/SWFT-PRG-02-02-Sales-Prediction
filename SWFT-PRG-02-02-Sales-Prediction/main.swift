@@ -13,9 +13,4 @@
 let revenue = 8600000
 let percentRevenue = 0.58
 
-var totalProfit: Double
-
-// Need to cast revenue as double to make multiplication work
-totalProfit = Double(revenue) * percentRevenue
-
-print(totalProfit)
+print(Double(revenue) * percentRevenue)
