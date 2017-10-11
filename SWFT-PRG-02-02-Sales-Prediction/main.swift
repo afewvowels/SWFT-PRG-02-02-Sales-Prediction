@@ -10,7 +10,13 @@
 //  predict how much the East Coast division will generate if the company
 //  has $8.6 million in sales this year.
 
+import Foundation
+
 let revenue = 8600000
 let percentRevenue = 0.58
 
-print(Double(revenue) * percentRevenue)
+var adjustedRevenue = Double(revenue) * percentRevenue
+
+let formattedRevenue = String(format: "Adjusted revenue: $%.2f", adjustedRevenue)
+
+print(formattedRevenue)
